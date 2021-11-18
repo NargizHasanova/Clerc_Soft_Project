@@ -1,0 +1,290 @@
+@import './_colors.scss';
+@import './_reset.scss';
+@import './_mixins.scss';
+.path {
+    margin-top: 40px;
+    width: 100%;
+    i {
+        color: #888888;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    &-home {
+        color: #888888;
+        font-size: 15px;
+        font-weight: 500;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    &-product {
+        color: #222;
+        cursor: auto;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+//========================= products section styles==================
+.product {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        width: 46%;
+        //swiper styles start=====================
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #d4d3d3;
+            &:hover {
+                zoom: 30%;
+            }
+        }
+        .swiper-slide img {
+            transition: 0.5s;
+        }
+        .swiper {
+            width: 100%;
+            // height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+        .mySwiper2 {
+            height: 533px;
+            width: 533px;
+        }
+        .mySwiper {
+            // height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        //==
+        .mySwiper .swiper-slide {
+            width: 171px !important;
+            height: 170px !important;
+        }
+        .swiper-wrapper {
+            width: 533px;
+            //height: 533px;
+        }
+        .product__left .swiper-slide img {
+            border: 1px solid #d4d3d3;
+        }
+        //====================swiper styles end==========
+    }
+    &__right {
+        width: 48%;
+        .vestibulum {
+            list-style-type: disc;
+            margin-top: 20px;
+            list-style-position: inside;
+            li {
+                font-size: 15px;
+                color: #555555;
+            }
+        }
+        .color {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .color-list {
+            display: flex;
+            li {
+                width: 26px;
+                height: 26px;
+                margin-right: 10px;
+            }
+            .white {
+                background-color: #fff;
+                border: 1px solid #eeeeee;
+            }
+            .dark-orange {
+                background-color: #C38C39;
+                border: 1px solid #eeeeee;
+            }
+            .green {
+                background-color: #5F9185;
+                border: 1px solid #eeeeee;
+            }
+            .red {
+                background-color: #AD4F45;
+                border: 1px solid #eeeeee;
+            }
+        }
+        .sizes {
+            display: flex;
+            justify-content: space-between;
+            width: 68%;
+            text-align: center;
+            margin-top: 10px;
+            li {
+                width: 54px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #fff;
+                border: 1px solid #d4d3d3;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                    background-color: $mainColor;
+                }
+            }
+        }
+        .vishList {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            i {
+                color: #ccc;
+                font-size: 18px;
+                font-weight: 300;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            span {
+                margin-right: 25px;
+                cursor: pointer;
+                &:hover {
+                    color: $mainColor;
+                    i {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        .add-product {
+            display: flex;
+            margin-top: 30px;
+            .product-count {
+                padding: 7px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 67px;
+                border: 1px solid #d4d3d3;
+                margin-right: 10px;
+                i {
+                    font-size: 15px;
+                    color: #d9d9d9;
+                    font-weight: 500;
+                    cursor: pointer;
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+                span {
+                    font-weight: 500;
+                }
+            }
+            button {
+                color: #fff;
+                background-color: $mainColor;
+                width: 150px;
+                font-size: 13px;
+                padding: 9px 20px;
+                text-align: center;
+                font-weight: 600;
+                &:hover {
+                    background-color: #616887;
+                }
+            }
+        }
+        .product-price {
+            font-size: 22px;
+            font-weight: 500;
+            color: #111111;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 15px;
+            color: #555555;
+            span {
+                font-weight: 600;
+                color: $mainColor;
+            }
+        }
+        .product-stars {
+            margin-top: 15px;
+            i {
+                color: #FFB933;
+                font-size: 12px;
+                margin-right: -4px;
+            }
+        }
+        .product-name {
+            font-size: 26px;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+}
+
+//============ info section start ====================
+.info {
+    &__top {}
+    &__bottom {
+        tbody {
+            font-size: 16px;
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/scss/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Cleric</title>
+</head>
+
+<body>
+    <header>
+        <!--=================== header top ========================-->
+        <div class="header__top container">
+            <div class="header__top--left">
+                <p>Welcome to our online store!</p>
+            </div>
+            <div class="header__top--right">
+                <div class="header-lang">
+                    <span>English(USD)</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown-select">
+                        <li>
+                            <a href="">French(EUR)</a>
+                        </li>
+                        <li>
+                            <a href="">Japanese(JPY)</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="header-divider"> | </span>
+                <div class="header-sign">
+                    <p>Login or Register</p>
+                </div>
+            </div>
+        </div>
+        <!--=================== header middle ========================-->
+        <div class="header__middle container">
+            <div class="header__middle--logo">
+                <a href="index.html"><img src="./assets/img//logo.png" alt="" /></a>
+            </div>
+            <div class="header__middle--search">
+                <input type="text" placeholder="Search here" name="" id="" />
+                <div class="btn">
+                    <button><i class="far fa-search"></i></button>
+                </div>
+                <div class="header-accessories">
+                    <span>Accessories</span>
+                    <ul class="header-accessories--categories">
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Accents</a></li>
+                        <li><a href="">Desks</a></li>
+                        <li><a href="">Sofas</a></li>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Bedroom</a></li>
+                    </ul>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="header__middle--user">
+                <div class="header-shop-basket">
+                    <i class="far fa-shopping-cart"></i>
+                    <span>0</span>
+                </div>
+                <i class="fal fa-user"></i>
+                <i class="fas fa-bars tablet-bar"></i>
+            </div>
+            <div class="mobile-navbar">
+                <i class="far fa-search search425"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-bars bar425"></i>
+                <div class="search-box">
+                    <i class="fas fa-times search-close-btn"></i>
+                    <div>
+                        <input type="text" placeholder="Enter keywords to search..." />
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="top-fixed">
+                <i class="fas fa-chevron-left left-menu-btn"></i>
+                <p class="menu-title">MAIN MENU</p>
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <nav class="bottom">
+                <ul>
+                    <li><a href="">NEW ARRIVALS</a></li>
+                    <li><a href="">HOT SALE</a></li>
+                    <li>
+                        <a class="acc" href="">ACCESORIES</a
+              ><i class="fas fa-chevron-right access-right"></i>
+            </li>
+            <li><a href="">ACCENTS</a></li>
+                    <li><a href="">TABLES</a></li>
+                    <li><a href="">DINNING</a></li>
+                    <li><a href="">LIGHTING</a></li>
+                    <li><a href="">OFFICE</a></li>
+                    <li>
+                        <a class="home" href="">HOME</a
+              ><i class="fas fa-chevron-right home-right"></i>
+            </li>
+            <li>
+              <a class="shop" href="">SHOP</a
+              ><i class="fas fa-chevron-right shop-right"></i>
+            </li>
+            <li>
+              <a class="page" href="">PAGES</a>
+                    </li>
+                    <li>
+                        <a class="blog" href="">BLOGS</a
+              ><i class="fas fa-chevron-right blog-right"></i>
+            </li>
+            <li><a class="blog" href="">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="categories-menu">
+            <ul class="acc-categories">
+                <li><a href="">LIVING</a></li>
+                <li><a href="">ACCENTS</a></li>
+                <li><a href="">NEW ARRIVALS</a></li>
+                <li><a href="">ACCESSORIES</a></li>
+                <li><a href="">BEDROOM</a></li>
+            </ul>
+            <ul class="home-categories">
+                <li><a href="">HOME 01</a></li>
+                <li><a href="">HOME 02</a></li>
+                <li><a href="">HOME 03</a></li>
+            </ul>
+            <ul class="shop-categories">
+                <li><a href="">GRID FULLWIDTH</a></li>
+                <li><a href="">GRID LEFT SIDEBAR</a></li>
+                <li><a href="">GRID BANNERSLIDER</a></li>
+                <li><a href="">LIST</a></li>
+            </ul>
+            <ul class="blogs-categories">
+                <li><a href="">BLOG STYLE</a></li>
+                <li><a href="">POST LAYOUT</a></li>
+            </ul>
+        </div>
+        <!--=================== header bottom ========================-->
+        <div class="header__bottom container">
+            <div class="header__bottom--categories">
+                <i class="fal fa-bars"></i>
+                <span>ALL CATEGORIES</span>
+                <ul class="categories-navbar">
+                    <li><a href="">New Arrivals</a></li>
+                    <hr />
+                    <li><a href="">Hot Sale</a></li>
+                    <hr />
+                    <li class="arrow-layer">
+                        <div class="arrow-layer-inner">
+                            <a href="">Accessories</a><i class="fas fa-chevron-right"></i>
+                        </div>
+                        <ul class="accessories-navbar">
+                            <li><a href="">Living</a></li>
+                            <hr />
+                            <li><a href="">Accents</a></li>
+                            <hr />
+                            <li><a href="">New arrivals</a></li>
+                            <hr />
+                            <li><a href="">Accessories</a></li>
+                            <hr />
+                            <li><a href="">Bedroom</a></li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li><a href="">Accents</a></li>
+                    <hr />
+                    <li><a href="">Tables</a></li>
+                    <hr />
+                    <li><a href="">Dining</a></li>
+                    <hr />
+                    <li><a href="">Lightning</a></li>
+                    <hr />
+                    <li><a href="">Office</a></li>
+                </ul>
+            </div>
+            <nav class="header__bottom--navbar">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">HOME</a><i class="fas fa-chevron-down"></i>
+                        <ul class="home-navbar">
+                            <li><a href="">Home 01</a></li>
+                            <li><a href="">Home 02</a></li>
+                            <li><a href="">Home 03</a></li>
+                        </ul>
+                    </li>
+                    <li class="shop">
+                        <a href="">SHOP</a><i class="fas fa-chevron-down"></i>
+                        <ul class="shop-navbar">
+                            <li><a href="">Grid 01</a></li>
+                            <li><a href="">Grid 02</a></li>
+                            <li><a href="">Grid 03</a></li>
+                            <li><a href="">List</a></li>
+                        </ul>
+                    </li>
+                    <li class="pages">
+                        <a href="">PAGES</a><i class="fas fa-chevron-down"></i>
+                        <nav class="pages-navbar">
+                            <ul>
+                                <h3>SHOP PAGES</h3>
+                                <hr />
+                                <li>
+                                    <a href="">Shopping Cart</a>
+                                </li>
+                                <li>
+                                    <a href="">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact us </a>
+                                </li>
+                                <li>
+                                    <a href="">404</a>
+                                </li>
+                                <li>
+                                    <a href="">Login/Register</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>PRODUCT</h3>
+                                <hr />
+                                <li>
+                                    <a href="products.html">Product Fullwidth </a>
+                                </li>
+                                <li>
+                                    <a href="">Product left sidebar</a>
+                                </li>
+                                <li>
+                                    <a href="">Product right sidebar</a>
+                                </li>
+                            </ul>
+                            <div class="pages-img">
+                                <img src="./assets/img/pages.jpg" alt="" />
+                            </div>
+                        </nav>
+                    </li>
+                    <li class="blogs">
+                        <a href="">BLOGS</a><i class="fas fa-chevron-down"></i>
+                        <ul class="blogs-navbar">
+                            <li class="blog-submenu-layer1">
+                                <a href="">Blog Style</a><i class="fas fa-chevron-right"></i>
+                                <ul class="blog-submenu1">
+                                    <li><a href="">Grid</a></li>
+                                    <li><a href="">List</a></li>
+                                    <li><a href="">List Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="blog-submenu-layer2">
+                                <a href="">Post Layout</a><i class="fas fa-chevron-right"></i>
+                                <ul class="blog-submenu2">
+                                    <li><a href="">Left Sidebar</a></li>
+                                    <li><a href="">Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="path container">
+            <a class="path-home" href="index.html">Home</a>
+            <i class="fas fa-angle-double-right"></i>
+            <a class="path-product" href="products.html">Product</a>
+        </div>
+        <!--================ product section start =========================-->
+        <section class="product container">
+            <div class="product__left">
+                <div style="
+              --swiper-navigation-color: #7f87ab;
+              --swiper-pagination-color: #7f87ab;
+            " class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/product1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/product2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/product3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/product4.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="mini-img" src="./assets/img/product1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mini-img" src="./assets/img/product2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mini-img" src="./assets/img/product3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mini-img" src="./assets/img/product4.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__right">
+                <h1 class="product-name">Rolf Round</h1>
+                <div class="product-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> (7)
+                </div>
+                <p>Availability: <span>In Stock</span></p>
+                <div class="product-price">$45</div>
+                <ul class="vestibulum">
+                    <li>Vestibulum tortor quam</li>
+                    <li>Imported</li>
+                    <li>Art.No. 06-7680</li>
+                    <div class="color">Color:</div>
+                </ul>
+                <ul class="color-list">
+                    <li class="white"></li>
+                    <li class="dark-orange"></li>
+                    <li class="green"></li>
+                    <li class="red"></li>
+                </ul>
+                <div class="color">Size:</div>
+                <ul class="sizes">
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>
+                </ul>
+                <div class="vishList">
+                    <span><i class="far fa-heart"></i>Add to Wishlist</span>
+                    <span><i class="fal fa-table"></i>View Size Chart</span>
+                </div>
+                <div class="add-product">
+                    <div class="product-count">
+                        <i class="fas fa-minus minus"></i>
+                        <span>1</span>
+                        <i class="fas fa-plus plus"></i>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="info container">
+            <div class="info__top">
+                <h3>DESCRIPTIONS</h3>
+                <h3>INFORMATION</h3>
+                <h3>REVIEWS</h3>
+            </div>
+            <div class="info__bottom">
+                <p class="description">
+                    Quisque quis ipsum venenatis, fermentum ante volutpat, ornare enim. Phasellus molestie risus non aliquet cursus. Integer vestibulum mi lorem, id hendrerit ante lobortis non. Nunc ante ante, lobortis non pretium non, vulputate vel nisi. Maecenas dolor
+                    elit, fringilla nec turpis ac, auctor vulputate nulla. Phasellus sed laoreet velit. Proin fringilla urna vel mattis euismod. Etiam sodales, massa non tincidunt iaculis, mauris libero scelerisque justo, ut rutrum lectus urna sit amet
+                    quam. Nulla maximus vestibulum mi vitae accumsan.
+                </p>
+                <div class="information">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>Size</td>
+                                <td>XS / S / M / L</td>
+                            </tr>
+                            <tr>
+                                <td>Color</td>
+                                <td>White/ Black/ Teal/ Brown</td>
+                            </tr>
+                            <tr>
+                                <td>Properties</td>
+                                <td>Colorful Dress</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/product.js"></script>
+</body>
+
+</html>

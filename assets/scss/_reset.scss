@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 87px;
+}
+
+.price-big {
+    font-size: 28px;
+    color: #7f87ab;
+    font-weight: 600;
+}
+
+.shop-btn button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.4s;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+    &:hover {
+        color: $mainColor;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 2px solid black;
+        transition: 0.2s;
+    }
+    &:hover::before {
+        animation: underlineOnHover 1s;
+        color: $mainColor;
+        border-bottom: 2px solid $mainColor;
+    }
+    @keyframes underlineOnHover {
+        0% {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-bottom: 2px solid black;
+        }
+        25% {
+            right: 0;
+            left: 100%;
+            width: 0;
+            border-bottom: 2px solid $mainColor;
+        }
+        50% {
+            left: 0;
+            width: 0;
+            border-bottom: 2px solid $mainColor;
+        }
+        100% {
+            left: 0;
+            width: 100%;
+            border-bottom: 2px solid $mainColor;
+        }
+    }
+}
+
+.title {
+    font-size: 28px;
+    color: #0a0a0a;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.map-title-active {
+    color: $mainColor !important;
+    position: relative !important;
+    &::before,
+    &::after {
+        content: "" !important;
+        position: absolute !important;
+        bottom: 5px !important;
+        width: 50% !important;
+        height: 2px !important;
+        opacity: 1 !important;
+        background-color: $mainColor !important;
+    }
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}

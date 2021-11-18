@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/scss/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Cleric</title>
+</head>
+
+<body>
+    <header>
+        <!--=================== header top ========================-->
+        <div class="header__top container">
+            <div class="header__top--left">
+                <p>Welcome to our online store!</p>
+            </div>
+            <div class="header__top--right">
+                <div class="header-lang">
+                    <span>English(USD)</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="dropdown-select">
+                        <li>
+                            <a href="">French(EUR)</a>
+                        </li>
+                        <li>
+                            <a href="">Japanese(JPY)</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="header-divider"> | </span>
+                <div class="header-sign">
+                    <p>Login or Register</p>
+                </div>
+            </div>
+        </div>
+        <!--=================== header middle ========================-->
+        <div class="header__middle container">
+            <div class="header__middle--logo">
+                <a href="index.html"><img src="./assets/img//logo.png" alt="" /></a>
+            </div>
+            <div class="header__middle--search">
+                <input type="text" placeholder="Search here" name="" id="" />
+                <div class="btn">
+                    <button><i class="far fa-search"></i></button>
+                </div>
+                <div class="header-accessories">
+                    <span>Accessories</span>
+                    <ul class="header-accessories--categories">
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Accents</a></li>
+                        <li><a href="">Desks</a></li>
+                        <li><a href="">Sofas</a></li>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Bedroom</a></li>
+                    </ul>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="header__middle--user">
+                <div class="header-shop-basket">
+                    <i class="far fa-shopping-cart"></i>
+                    <span>0</span>
+                </div>
+                <i class="fal fa-user"></i>
+                <i class="fas fa-bars tablet-bar"></i>
+            </div>
+            <div class="mobile-navbar">
+                <i class="far fa-search search425"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-bars bar425"></i>
+                <div class="search-box">
+                    <i class="fas fa-times search-close-btn"></i>
+                    <div>
+                        <input type="text" placeholder="Enter keywords to search..." />
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="top-fixed">
+                <i class="fas fa-chevron-left left-menu-btn"></i>
+                <p class="menu-title">MAIN MENU</p>
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <nav class="bottom">
+                <ul>
+                    <li><a href="">NEW ARRIVALS</a></li>
+                    <li><a href="">HOT SALE</a></li>
+                    <li>
+                        <a class="acc" href="">ACCESORIES</a
+              ><i class="fas fa-chevron-right access-right"></i>
+            </li>
+            <li><a href="">ACCENTS</a></li>
+                    <li><a href="">TABLES</a></li>
+                    <li><a href="">DINNING</a></li>
+                    <li><a href="">LIGHTING</a></li>
+                    <li><a href="">OFFICE</a></li>
+                    <li>
+                        <a class="home" href="">HOME</a
+              ><i class="fas fa-chevron-right home-right"></i>
+            </li>
+            <li>
+              <a class="shop" href="">SHOP</a
+              ><i class="fas fa-chevron-right shop-right"></i>
+            </li>
+            <li>
+              <a class="page" href="">PAGES</a>
+                    </li>
+                    <li>
+                        <a class="blog" href="">BLOGS</a
+              ><i class="fas fa-chevron-right blog-right"></i>
+            </li>
+            <li><a class="blog" href="">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="categories-menu">
+            <ul class="acc-categories">
+                <li><a href="">LIVING</a></li>
+                <li><a href="">ACCENTS</a></li>
+                <li><a href="">NEW ARRIVALS</a></li>
+                <li><a href="">ACCESSORIES</a></li>
+                <li><a href="">BEDROOM</a></li>
+            </ul>
+            <ul class="home-categories">
+                <li><a href="">HOME 01</a></li>
+                <li><a href="">HOME 02</a></li>
+                <li><a href="">HOME 03</a></li>
+            </ul>
+            <ul class="shop-categories">
+                <li><a href="">GRID FULLWIDTH</a></li>
+                <li><a href="">GRID LEFT SIDEBAR</a></li>
+                <li><a href="">GRID BANNERSLIDER</a></li>
+                <li><a href="">LIST</a></li>
+            </ul>
+            <ul class="blogs-categories">
+                <li><a href="">BLOG STYLE</a></li>
+                <li><a href="">POST LAYOUT</a></li>
+            </ul>
+        </div>
+        <!--=================== header bottom ========================-->
+        <div class="header__bottom container">
+            <div class="header__bottom--categories">
+                <i class="fal fa-bars"></i>
+                <span>ALL CATEGORIES</span>
+                <ul class="categories-navbar">
+                    <li><a href="">New Arrivals</a></li>
+                    <hr />
+                    <li><a href="">Hot Sale</a></li>
+                    <hr />
+                    <li class="arrow-layer">
+                        <div class="arrow-layer-inner">
+                            <a href="">Accessories</a><i class="fas fa-chevron-right"></i>
+                        </div>
+                        <ul class="accessories-navbar">
+                            <li><a href="">Living</a></li>
+                            <hr />
+                            <li><a href="">Accents</a></li>
+                            <hr />
+                            <li><a href="">New arrivals</a></li>
+                            <hr />
+                            <li><a href="">Accessories</a></li>
+                            <hr />
+                            <li><a href="">Bedroom</a></li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li><a href="">Accents</a></li>
+                    <hr />
+                    <li><a href="">Tables</a></li>
+                    <hr />
+                    <li><a href="">Dining</a></li>
+                    <hr />
+                    <li><a href="">Lightning</a></li>
+                    <hr />
+                    <li><a href="">Office</a></li>
+                </ul>
+            </div>
+            <nav class="header__bottom--navbar">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">HOME</a><i class="fas fa-chevron-down"></i>
+                        <ul class="home-navbar">
+                            <li><a href="">Home 01</a></li>
+                            <li><a href="">Home 02</a></li>
+                            <li><a href="">Home 03</a></li>
+                        </ul>
+                    </li>
+                    <li class="shop">
+                        <a href="">SHOP</a><i class="fas fa-chevron-down"></i>
+                        <ul class="shop-navbar">
+                            <li><a href="">Grid 01</a></li>
+                            <li><a href="">Grid 02</a></li>
+                            <li><a href="">Grid 03</a></li>
+                            <li><a href="">List</a></li>
+                        </ul>
+                    </li>
+                    <li class="pages">
+                        <a href="">PAGES</a><i class="fas fa-chevron-down"></i>
+                        <nav class="pages-navbar">
+                            <ul>
+                                <h3>SHOP PAGES</h3>
+                                <hr />
+                                <li>
+                                    <a href="">Shopping Cart</a>
+                                </li>
+                                <li>
+                                    <a href="">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact us </a>
+                                </li>
+                                <li>
+                                    <a href="">404</a>
+                                </li>
+                                <li>
+                                    <a href="">Login/Register</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>PRODUCT</h3>
+                                <hr />
+                                <li>
+                                    <a href="products.html">Product Fullwidth </a>
+                                </li>
+                                <li>
+                                    <a href="">Product left sidebar</a>
+                                </li>
+                                <li>
+                                    <a href="">Product right sidebar</a>
+                                </li>
+                            </ul>
+                            <div class="pages-img">
+                                <img src="./assets/img/pages.jpg" alt="" />
+                            </div>
+                        </nav>
+                    </li>
+                    <li class="blogs">
+                        <a href="">BLOGS</a><i class="fas fa-chevron-down"></i>
+                        <ul class="blogs-navbar">
+                            <li class="blog-submenu-layer1">
+                                <a href="">Blog Style</a><i class="fas fa-chevron-right"></i>
+                                <ul class="blog-submenu1">
+                                    <li><a href="">Grid</a></li>
+                                    <li><a href="">List</a></li>
+                                    <li><a href="">List Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="blog-submenu-layer2">
+                                <a href="">Post Layout</a><i class="fas fa-chevron-right"></i>
+                                <ul class="blog-submenu2">
+                                    <li><a href="">Left Sidebar</a></li>
+                                    <li><a href="">Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--=================== main start =============================-->
+    <main>
+        <section class="slider__top container">
+            <div class="slider__top-left">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/mainslider1.jpg" alt="" />
+                            <div class="slider__top-left--desc">
+                                <h5 class="down-anim">Sale up to 40% off!</h5>
+                                <h3 class="left-anim">Spring Summer<br />Collection</h3>
+                                <div class="new-price right-anim">
+                                    New Price:<span class="price-big">$270.00</span>
+                                </div>
+                                <div class="shop-btn">
+                                    <button class="up-anim">Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/mainslider2.jpg" alt="" />
+                            <div class="slider__top-left--desc">
+                                <h5 class="down-anim">Take a furniture</h5>
+                                <h3 class="left-anim">Up to 25% Off <br />order now</h3>
+                                <div class="new-price">
+                                    Save Price:<span class="price-big">$170.00</span>
+                                </div>
+                                <div class="shop-btn up-anim"><button>Shop now</button></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/mainslider3.jpg" alt="" />
+                            <div class="slider__top-left--desc">
+                                <h5 class="down-anim">Cleric Best Collection</h5>
+                                <h3 class="left-anim">A range Of<br />Furniture</h3>
+                                <div class="new-price">
+                                    New Price:<span class="price-big">$250.00</span>
+                                </div>
+                                <div class="shop-btn up-anim"><button>Shop now</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="slider__top-right">
+                <div class="slider__top-right1">
+                    <img src="./assets/img/mainslider-right.jpg" alt="" />
+                    <div class="slider__top-right1--desc">
+                        <h3>Pick Your Items</h3>
+                        <p>Adipiscing elit curabitur senectus sem</p>
+                        <div class="shop-btn"><button>Shop now</button></div>
+                    </div>
+                </div>
+                <div class="slider__top-right2">
+                    <img src="./assets/img/mainslider-right2.jpg" alt="" />
+                    <div class="slider__top-right2--desc">
+                        <h3>Best Of Products</h3>
+                        <p>Cras pulvinar loresum dolor conse</p>
+                        <div class="price-middle">$379.00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======================= slider middle start ============================-->
+        <section class="slider__middle container">
+            <div class="slider__middle-intro">
+                <h3 class="title">Deal Of The Day</h3>
+                <hr />
+            </div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/deal1.jpg" alt="" />
+                        <div class="slider__middle-img-desc">
+                            <div class="slider__middle-counter">
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>HRS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>MINS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>SECS</span>
+                                </div>
+                            </div>
+                            <h5>Rolf Round</h5>
+                            <div class="rate">
+                                <div class="star">
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                </div>
+                                <div class="star-num">(3)</div>
+                            </div>
+                            <div class="discount">
+                                <del>$65</del>
+                                <span>$45</span>
+                            </div>
+                            <div class="new-icon">New</div>
+                            <div class="slider__middle-layer">
+                                <div class="heart"><i class="fal fa-heart"></i></div>
+                                <div class="search"><i class="fal fa-search"></i></div>
+                                <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/deal2.jpg" alt="" />
+                        <div class="slider__middle-img-desc">
+                            <div class="slider__middle-counter">
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>HRS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>MINS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>SECS</span>
+                                </div>
+                            </div>
+                            <h5>Rolf Round</h5>
+                            <div class="rate">
+                                <div class="star">
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                </div>
+                                <div class="star-num">(3)</div>
+                            </div>
+                            <div class="discount">
+                                <del>$65</del>
+                                <span>$45</span>
+                            </div>
+                            <div class="new-icon">New</div>
+                            <div class="slider__middle-layer">
+                                <div class="heart"><i class="fal fa-heart"></i></div>
+                                <div class="search"><i class="fal fa-search"></i></div>
+                                <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                            </div>
+                        </div>
+                        <div class="new-icon">New</div>
+                        <div class="slider__middle-layer">
+                            <div class="heart"><i class="fal fa-heart"></i></div>
+                            <div class="search"><i class="fal fa-search"></i></div>
+                            <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/deal3.jpg" alt="" />
+                        <div class="slider__middle-img-desc">
+                            <div class="slider__middle-counter">
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>HRS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>MINS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>SECS</span>
+                                </div>
+                            </div>
+                            <h5>Rolf Round</h5>
+                            <div class="rate">
+                                <div class="star">
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                </div>
+                                <div class="star-num">(3)</div>
+                            </div>
+                            <div class="discount">
+                                <del>$65</del>
+                                <span>$45</span>
+                            </div>
+                            <div class="new-icon">New</div>
+                            <div class="slider__middle-layer">
+                                <div class="heart"><i class="fal fa-heart"></i></div>
+                                <div class="search"><i class="fal fa-search"></i></div>
+                                <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/deal4.jpg" alt="" />
+                        <div class="slider__middle-img-desc">
+                            <div class="slider__middle-counter">
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>HRS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>MINS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>SECS</span>
+                                </div>
+                            </div>
+                            <h5>Rolf Round</h5>
+                            <div class="rate">
+                                <div class="star">
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                </div>
+                                <div class="star-num">(3)</div>
+                            </div>
+                            <div class="discount">
+                                <del>$65</del>
+                                <span>$45</span>
+                            </div>
+                            <div class="new-icon">New</div>
+                            <div class="slider__middle-layer">
+                                <div class="heart"><i class="fal fa-heart"></i></div>
+                                <div class="search"><i class="fal fa-search"></i></div>
+                                <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/deal5.jpg" alt="" />
+                        <div class="slider__middle-img-desc">
+                            <div class="slider__middle-counter">
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>HRS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>MINS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>SECS</span>
+                                </div>
+                            </div>
+                            <h5>Rolf Round</h5>
+                            <div class="rate">
+                                <div class="star">
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                </div>
+                                <div class="star-num">(3)</div>
+                            </div>
+                            <div class="discount">
+                                <del>$65</del>
+                                <span>$45</span>
+                            </div>
+                            <div class="new-icon">New</div>
+                            <div class="slider__middle-layer">
+                                <div class="heart"><i class="fal fa-heart"></i></div>
+                                <div class="search"><i class="fal fa-search"></i></div>
+                                <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/deal6.jpg" alt="" />
+                        <div class="slider__middle-img-desc">
+                            <div class="slider__middle-counter">
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>HRS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>MINS</span>
+                                </div>
+                                <div class="counter">
+                                    <span>00</span>
+                                    <span>SECS</span>
+                                </div>
+                            </div>
+                            <h5>Rolf Round</h5>
+                            <div class="rate">
+                                <div class="star">
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fas fa-star filled-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                    <i class="fal fa-star empty-star"></i>
+                                </div>
+                                <div class="star-num">(3)</div>
+                            </div>
+                            <div class="discount">
+                                <del>$65</del>
+                                <span>$45</span>
+                            </div>
+                            <div class="new-icon">New</div>
+                            <div class="slider__middle-layer">
+                                <div class="heart"><i class="fal fa-heart"></i></div>
+                                <div class="search"><i class="fal fa-search"></i></div>
+                                <div class="shop"><i class="fal fa-shopping-bag"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--=================== add section start ===============================-->
+        <section class="add container">
+            <div class="add__top">
+                <div class="add__top-left">
+                    <img src="./assets/img/qutu1.jpg" alt="" />
+                    <div class="add__top-left-desc">
+                        <h5>TOP STAFF PICK</h5>
+                        <h3>Best Collection</h3>
+                        <p>Proin interdum magna primis id consequat dictum</p>
+                        <div class="shop-btn"><button>Shop now</button></div>
+                    </div>
+                </div>
+                <div class="add__top-right">
+                    <img src="./assets/img/qutu2.jpg" alt="" />
+                    <div class="add__top-right-desc">
+                        <h3>
+                            Maybe You’ve <br /> Earned It
+                        </h3>
+                        <p>
+                            Use code: <span>CLERIC</span> Get 25% Off for all Accessories items!
+                        </p>
+                        <div class="shop-btn"><button>Shop now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="add__bottom">
+                <img src="./assets/img/sofabig.jpg" alt="" />
+                <div class="add__bottom-desc">
+                    <h3>Collection Arrived</h3>
+                    <p>
+                        You have no items & Are you <br /> ready to use? come & shop with us!
+                    </p>
+                    <div class="price">Price from: <span>$45.00</span></div>
+                    <div class="shop-btn"><button>Shop now</button></div>
+                </div>
+            </div>
+        </section>
+        <!--================================== map section start ===================================-->
+        <section class="map container">
+            <div class="map__title">
+                <h3 class="category map-title-active">BESTSELLER</h3>
+                <h3 class="category">NEW ARRIVALS</h3>
+                <h3 class="category">TOP RATED</h3>
+            </div>
+            <div class="map__content">
+                <div class="map__content-top">
+                    <img src="" alt="" />
+                </div>
+                <div class="map__content-btm">
+                    <h3>js content should be here</h3>
+                </div>
+            </div>
+        </section>
+        <!--======================== line section start ========================================-->
+        <section class="line container">
+            <div class="line__item">
+                <i class="far fa-rocket"></i>
+                <div class="line__item-desc">
+                    <h4>EU FREE DELIVERY</h4>
+                    <p>
+                        Free Delivery on all order from EU <br /> with price more than $90.00
+                    </p>
+                </div>
+            </div>
+            <div class="line__item">
+                <i class="fas fa-redo"></i>
+                <div class="line__item-desc">
+                    <h4>MONEY GUARANTEE</h4>
+                    <p>
+                        30 Days money back guarantee <br /> no question asked!
+                    </p>
+                </div>
+            </div>
+            <div class="line__item">
+                <i class="far fa-lock"></i>
+
+                <div class="line__item-desc">
+                    <h4>ONLINE SUPPORT 24/7</h4>
+                    <p>
+                        We’re here to support to you. <br /> Let’s shopping now!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--============================ news section start ============================================-->
+        <section class="news container">
+            <h3 class="title">OUR LATEST NEWS</h3>
+            <hr />
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide news-item">
+                        <img src="./assets/img/new1.jpg" alt="" />
+                        <div class="news-desc">
+                            <span>Agust 17, 09:14 am</span>
+                            <h2>We bring you the best</h2>
+                            <p>
+                                Risus non porta suscipit lobortis habitasse felis, aptent interdum pretium ut.
+                            </p>
+                            <div class="shop-btn"><button>Read more</button></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news-item">
+                        <img src="./assets/img/new2.jpg" alt="" />
+                        <div class="news-desc">
+                            <span>Agust 17, 09:14 am</span>
+                            <h2>We know that buying Items</h2>
+                            <p>
+                                Using Lorem Ipsum allows designers to put together layouts and the form content
+                            </p>
+                            <div class="shop-btn"><button>Read more</button></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news-item">
+                        <img src="./assets/img/new3.jpg" alt="" />
+                        <div class="news-desc">
+                            <span>Agust 17, 09:14 am</span>
+                            <h2>We design functional Items</h2>
+                            <p>
+                                Risus non porta suscipit lobortis habitasse felis, aptent interdum pretium ut.
+                            </p>
+                            <div class="shop-btn"><button>Read more</button></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news-item">
+                        <img src="./assets/img/new4.jpg" alt="" />
+                        <div class="news-desc">
+                            <span>Agust 17, 09:14 am</span>
+                            <h2>We know that buying Items</h2>
+                            <p>
+                                Class integer tellus praesent at torquent cras, potenti erat fames volutpat etiam.
+                            </p>
+                            <div class="shop-btn"><button>Read more</button></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news-item">
+                        <img src="./assets/img/new1.jpg" alt="" />
+                        <div class="news-desc">
+                            <span>Agust 17, 09:14 am</span>
+                            <h2>We design functional Items</h2>
+                            <p>
+                                Risus non porta suscipit lobortis habitasse felis, aptent interdum pretium ut.
+                            </p>
+                            <div class="shop-btn"><button>Read more</button></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide news-item">
+                        <img src="./assets/img/new2.jpg" alt="" />
+                        <div class="news-desc">
+                            <span>Agust 17, 09:14 am</span>
+                            <h2>We know that buying Items</h2>
+                            <p>
+                                Using Lorem Ipsum allows designers to put together layouts and the form content
+                            </p>
+                            <div class="shop-btn"><button>Read more</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination news-pagination"></div>
+            </div>
+        </section>
+        <!--========================= instagram section start =======================-->
+        <section class="insta">
+            <div class="insta__top">
+                <i class="fab fa-instagram"></i>
+                <h3 class="title">INSTAGRAM FEED</h3>
+                <hr />
+            </div>
+            <div class="insta__bottom">
+                <div class="insta-img">
+                    <img src="./assets/img/insta1.jpg" alt="" />
+                    <div class="insta-layer"></div>
+                    <i class="fab fa-instagram layer-center"></i>
+                </div>
+                <div class="insta-img">
+                    <img src="./assets/img/insta2.jpg" alt="" />
+                    <div class="insta-layer"></div>
+                    <i class="fab fa-instagram layer-center"></i>
+                </div>
+                <div class="insta-img">
+                    <img src="./assets/img/insta3.jpg" alt="" />
+                    <div class="insta-layer"></div>
+                    <i class="fab fa-instagram layer-center"></i>
+                </div>
+                <div class="insta-img">
+                    <img src="./assets/img/insta4.jpg" alt="" />
+                    <div class="insta-layer"></div>
+                    <i class="fab fa-instagram layer-center"></i>
+                </div>
+                <div class="insta-img">
+                    <img src="./assets/img/insta5.jpg" alt="" />
+                    <div class="insta-layer"></div>
+                    <i class="fab fa-instagram layer-center"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--=================== footer start ===================================-->
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="top-left">
+                <h2>QUICK MENU</h2>
+                <ul class="footer-list">
+                    <li><a href="">New arrivals</a></li>
+                    <li><a href="">Life style</a></li>
+                    <li><a href="">Accents</a></li>
+                    <li><a href="">Tables</a></li>
+                    <li><a href="">Dining</a></li>
+                </ul>
+            </div>
+            <div class="top-center">
+                <h3>NEWSLETTER</h3>
+                <p>
+                    Sign up for our free video course and <br /> urban garden inspiration
+                </p>
+                <input type="text" placeholder="Your email letter" />
+                <button>Subscribe</button>
+            </div>
+            <div class="top-right">
+                <h2>INFORMATION</h2>
+                <ul>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Delivery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Return</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="copyright">
+                <span>Copyright © 2021 Hasanova Nargiz . All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="btmToTop" onclick="topFunction()"><i class="fas fa-angle-double-up"></i
+    ></a>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
