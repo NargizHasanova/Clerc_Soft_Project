@@ -37,7 +37,8 @@
         //swiper styles start=====================
         .swiper {
             width: 100%;
-            height: 100%;
+            height: auto;
+            // height: 100%;
         }
         .swiper-slide {
             text-align: center;
@@ -137,6 +138,7 @@
         }
         .color-list {
             display: flex;
+            width: 27%;
             li {
                 width: 26px;
                 height: 26px;
@@ -256,7 +258,7 @@
         .product-stars {
             margin-top: 15px;
             i {
-                color: #FFB933;
+                color: $starColor;
                 font-size: 12px;
                 margin-right: -4px;
             }
@@ -271,7 +273,48 @@
 
 //============ info section start ====================
 .info {
-    &__top {}
+    &__top {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 45px;
+        h3 {
+            position: relative;
+            font-size: 15px;
+            color: #bbb;
+            font-weight: 600;
+            cursor: pointer;
+            z-index: 99;
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+            &:hover {
+                color: $mainColor;
+            }
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                width: 0px;
+                height: 2px;
+                transition: 0.2s;
+                opacity: 0;
+                background-color: $mainColor;
+            }
+            &::before {
+                left: 50%;
+            }
+            &::after {
+                right: 50%;
+            }
+            &:hover::before,
+            &:hover::after {
+                width: 50%;
+                opacity: 1;
+            }
+        }
+    }
     &__bottom {
         tbody {
             font-size: 16px;
@@ -286,5 +329,255 @@
                 padding: 8px;
             }
         }
+        .description {
+            color: #666;
+        }
+        .information {
+            display: none;
+        }
+        .reviews {
+            color: #666;
+            display: none;
+            h2 {
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                color: black;
+            }
+            .user-review {
+                display: flex;
+                align-items: center;
+                margin-bottom: 45px;
+                .user-img {
+                    margin-right: 30px;
+                }
+                .user-desc {
+                    width: 100%;
+                    .desc-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #eee;
+                        padding-bottom: 5px;
+                        strong {
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: #666;
+                        }
+                        .fa-star {
+                            color: $starColor;
+                            font-size: 12px;
+                            margin-right: -5px;
+                        }
+                    }
+                    .user-text {
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .review-middle {
+                margin-bottom: 30px;
+                span {
+                    color: $mainColor;
+                }
+            }
+            .rating {
+                z-index: 99;
+                .rating-scale {
+                    display: flex;
+                    cursor: pointer;
+                    .fa-star {
+                        color: #ccc;
+                    }
+                    .rate {
+                        border-right: 1px solid #eee;
+                        padding-right: 15px;
+                        cursor: pointer;
+                        &:hover {
+                            i {
+                                color: $mainColor;
+                            }
+                        }
+                        &:not(:first-child) {
+                            padding-left: 10px;
+                        }
+                        i {
+                            font-size: 11px;
+                            margin-right: -5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .form {
+            color: #666;
+            .textarea {
+                margin-top: 20px;
+                display: block;
+            }
+            textarea {
+                display: block;
+                width: 100%;
+                padding: 11px 26px;
+                border: 1px solid #eeeeee;
+            }
+            .review-name,
+            .review-email {
+                label {
+                    margin-top: 40px;
+                    display: block;
+                }
+                input {
+                    padding: 6px 15px;
+                    width: 48%;
+                    border: 1px solid #eee;
+                    height: 42px;
+                }
+            }
+            button {
+                color: #fff;
+                background-color: $mainColor;
+                padding: 9px 30px;
+                font-size: 13px;
+                font-weight: 600;
+                margin-top: 20px;
+                &:hover {
+                    background-color: #616887;
+                }
+            }
+        }
     }
+}
+
+//================== also section styles
+.also-product {
+    h2 {
+        font-size: 20px;
+        color: #0a0a0a;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 65px;
+    }
+    hr {
+        border: none;
+        background-color: $mainColor;
+        height: 4px;
+        width: 68px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .swiper-slide {
+        position: relative;
+        width: 98%;
+        border: 2px solid #F1F1F1;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid #eee;
+        border-radius: 28px;
+        padding: 8px 12px;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next,
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        color: $mainColor;
+        &:hover::after {
+            color: #fff;
+            background-color: $mainColor;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        opacity: 0;
+        left: 40px;
+        transition: 0.4s;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        opacity: 0;
+        right: 40px;
+        transition: 0.4s;
+    }
+    .swiper:hover {
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            opacity: 1;
+            left: 5px;
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            opacity: 1;
+            right: 5px;
+        }
+    }
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        display: none;
+    }
+    .swiper-slide {
+        padding-bottom: 80px;
+    }
+    .slider__middle-img-desc {
+        padding: 0 35px 20px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 4px;
+            margin: 15px 0;
+            cursor: pointer;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+        .rate {
+            display: flex;
+            justify-content: center;
+            .star {
+                .fa-star {
+                    font-size: 12px;
+                }
+                .empty-star {
+                    color: $starColor;
+                }
+                .filled-star {
+                    color: $starColor;
+                }
+            }
+            .star-num {
+                margin-left: 7px;
+                color: #666;
+            }
+        }
+        .discount {
+            del {
+                color: #aaa;
+                margin-right: 5px;
+                font-size: 14px;
+            }
+            span {
+                font-size: 14px;
+                color: #7f87ab;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//========= footer styles ==========
+.product-footer {
+    margin-top: 60px;
 }

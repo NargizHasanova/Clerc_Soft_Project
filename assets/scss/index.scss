@@ -140,6 +140,8 @@
     }
     
     //header styles start ========================================
+    @media(min-width:769px) {}
+    
     header {
         .header__top {
             background-color: $mainColor;
@@ -834,10 +836,10 @@
                     font-size: 12px;
                 }
                 .empty-star {
-                    color: #FFB934;
+                    color: $starColor;
                 }
                 .filled-star {
-                    color: #FFB934;
+                    color: $starColor;
                 }
             }
             .star-num {
@@ -916,8 +918,13 @@
             margin-bottom: 27px;
             display: flex;
             justify-content: space-between;
+            width: 100%;
             &-left {
                 position: relative;
+                width: 48%;
+                img {
+                    width: 100%;
+                }
                 &-desc {
                     position: absolute;
                     top: 45px;
@@ -942,6 +949,10 @@
             }
             &-right {
                 position: relative;
+                width: 48%;
+                img {
+                    width: 100%;
+                }
                 &-desc {
                     position: absolute;
                     top: 45px;
@@ -965,6 +976,10 @@
         }
         &__bottom {
             position: relative;
+            width: 100%;
+            img {
+                width: 100%;
+            }
             &-desc {
                 position: absolute;
                 top: 50%;
@@ -1119,10 +1134,10 @@
                             font-size: 12px;
                         }
                         .empty-star {
-                            color: #FFB934;
+                            color: $starColor;
                         }
                         .filled-star {
-                            color: #FFB934;
+                            color: $starColor;
                         }
                     }
                     .star-num {
@@ -1731,6 +1746,52 @@
             img {
                 width: 100%;
             }
+        }
+    }
+    
+    @media only screen and (max-width: 1300px) and (min-width: 1024px) {
+        header .header__bottom {
+            display: none;
+        }
+        header .header__top,
+        .insta,
+        .footer {
+            width: 102vw;
+        }
+        .slider__top-left {
+            width: 100%;
+        }
+        .slider__top {
+            flex-direction: column;
+        }
+        .slider__top-right {
+            width: 100%;
+            flex-direction: row;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .slider__top-right1,
+        .slider__top-right2 {
+            width: 48.5%;
+            img {
+                width: 100%;
+            }
+        }
+        .map .map-item {
+            width: 31%;
+        }
+        .add__top-left-desc {
+            top: 21px;
+        }
+        .add__top-right-desc {
+            top: 17px;
+        }
+        .add__top-right-desc p,
+        .add__top-left-desc p {
+            margin-bottom: 13px;
+        }
+        .shop-btn button {
+            font-size: 16px;
         }
     }
     

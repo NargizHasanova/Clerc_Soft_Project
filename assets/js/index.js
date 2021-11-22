@@ -10,7 +10,9 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-//======================= swiper2 
+console.log(window.document.innerWidth)
+    //======================= swiper2 
+
 
 if (window.innerWidth == 768) {
     var swiper = new Swiper(".mySwiper2", {
@@ -21,7 +23,17 @@ if (window.innerWidth == 768) {
             clickable: true,
         },
     });
-} else if (window.innerWidth > 768) {
+} else if (window.innerWidth > 800 && window.innerWidth < 1200) {
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+} else if (window.innerWidth > 1200) {
     var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 4,
         spaceBetween: 30,
@@ -71,7 +83,7 @@ if (window.innerWidth == 768) {
     });
 }
 
-
+//===================== collection js
 const collection = [{
         id: 1,
         img: "http://ledthanhdat.vn/html/cleric/assets/images/product-item-1.jpg",
