@@ -3281,6 +3281,13 @@ header .header__bottom--navbar .pages-img {
   .shop-btn button {
     font-size: 16px;
   }
+  .container {
+    padding: 0 30px;
+  }
+  .line {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @-webkit-keyframes bounceDown {
