@@ -10,8 +10,8 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-console.log(window.document.innerWidth)
-    //======================= swiper2 
+
+//======================= swiper2 
 
 
 if (window.innerWidth == 768) {
@@ -84,7 +84,8 @@ if (window.innerWidth == 768) {
 }
 
 //===================== collection js
-const collection = [{
+const collection = [
+    {
         id: 1,
         img: "http://ledthanhdat.vn/html/cleric/assets/images/product-item-1.jpg",
         title: "Blow Planter",
@@ -309,7 +310,7 @@ categoriesContainer.addEventListener("click", e => {
 let toTop = document.querySelector(".btmToTop")
 var rootElement = document.documentElement
 
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction()
 };
 
@@ -335,7 +336,7 @@ let subMenu = document.querySelector(".categories-menu")
 let subMenuAcc = document.querySelector(".access-right")
 let subMenuHome = document.querySelector(".home-right")
 let subMenuShop = document.querySelector(".shop-right")
-    //let subMenuPage = document.querySelector(".page-right")
+//let subMenuPage = document.querySelector(".page-right")
 let subMenuBlog = document.querySelector(".blog-right")
 let goBackBtn = document.querySelector(".left-menu-btn")
 let menuTitle = document.querySelector(".menu-title")
@@ -367,23 +368,23 @@ closeBtn.addEventListener("click", a => {
     blogList.style.visibility = "hidden"
 })
 goBackBtn.addEventListener("click", a => {
-        menuTitle.innerHTML = "MAIN MENU"
-        accList.style.visibility = "hidden"
-        homeList.style.visibility = "hidden"
-        shopList.style.visibility = "hidden"
-        blogList.style.visibility = "hidden"
-        accList.style.left = "22%"
-        homeList.style.left = "22%"
-        shopList.style.left = "22%"
-        blogList.style.left = "22%"
-        bottom.style.visibility = "visible"
-        goBackBtn.style.display = "none"
-        accList.style.opacity = "0"
-        homeList.style.opacity = "0"
-        shopList.style.opacity = "0"
-        blogList.style.opacity = "0"
-    })
-    //================================
+    menuTitle.innerHTML = "MAIN MENU"
+    accList.style.visibility = "hidden"
+    homeList.style.visibility = "hidden"
+    shopList.style.visibility = "hidden"
+    blogList.style.visibility = "hidden"
+    accList.style.left = "22%"
+    homeList.style.left = "22%"
+    shopList.style.left = "22%"
+    blogList.style.left = "22%"
+    bottom.style.visibility = "visible"
+    goBackBtn.style.display = "none"
+    accList.style.opacity = "0"
+    homeList.style.opacity = "0"
+    shopList.style.opacity = "0"
+    blogList.style.opacity = "0"
+})
+//================================
 
 
 subMenuAcc.addEventListener("click", a => {
@@ -393,7 +394,7 @@ subMenuAcc.addEventListener("click", a => {
     accList.style.left = "0"
     bottom.style.visibility = "hidden"
     accList.style.opacity = "1"
-        // accList.style.display = "block"
+    // accList.style.display = "block"
 })
 
 
@@ -453,21 +454,21 @@ function foo() {
     });
 }
 pagin.addEventListener("click", e => {
-        upEl.forEach(element => {
-            element.classList.add("up-anim")
-        });
-        rightEl.forEach(element => {
-            element.classList.add("right-anim")
-        });
-        leftEl.forEach(element => {
-            element.classList.add("left-anim")
-        });
-        downEl.forEach(element => {
-            element.classList.add("down-anim")
-        });
-        window.setTimeout(foo, 2000);
-    })
-    //===================================================
+    upEl.forEach(element => {
+        element.classList.add("up-anim")
+    });
+    rightEl.forEach(element => {
+        element.classList.add("right-anim")
+    });
+    leftEl.forEach(element => {
+        element.classList.add("left-anim")
+    });
+    downEl.forEach(element => {
+        element.classList.add("down-anim")
+    });
+    window.setTimeout(foo, 2000);
+})
+//===================================================
 let searchBox = document.querySelector(".search-box")
 let searchBtn425 = document.querySelector(".search425")
 let searchCloseBtn = document.querySelector(".search-close-btn")

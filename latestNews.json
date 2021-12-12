@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "img": "http://ledthanhdat.vn/html/cleric/assets/images/slider-blog-thumb-1.jpg",
+        "date": "Agust 17, 09:14 am",
+        "title": "We bring you the best",
+        "text": "Risus non porta suscipit lobortis habitasse felis, aptent interdum pretium ut."
+    },
+    {
+        "id":2,
+        "img": "http://ledthanhdat.vn/html/cleric/assets/images/slider-blog-thumb-2.jpg",
+        "date": "Agust 17, 09:14 am",
+        "title": "We know that buying Items",
+        "text": "Using Lorem Ipsum allows designers to put together layouts and the form content"
+    },
+    {
+        "id":3,
+        "img": "http://ledthanhdat.vn/html/cleric/assets/images/slider-blog-thumb-3.jpg",
+        "date": "Agust 17, 09:14 am",
+        "title": "We design functional Items",
+        "text": "Risus non porta suscipit lobortis habitasse felis, aptent interdum pretium ut."
+    },
+    {
+        "id":4,
+        "img": "http://ledthanhdat.vn/html/cleric/assets/images/slider-blog-thumb-4.jpg",
+        "date": "Agust 17, 09:14 am",
+        "title": "We bring you the best",
+        "text": "Risus non porta suscipit lobortis habitasse felis, aptent interdum pretium ut."
+    },
+    {
+        "id":5,
+        "img": "http://ledthanhdat.vn/html/cleric/assets/images/slider-blog-thumb-1.jpg",
+        "date": "Agust 17, 09:14 am",
+        "title": "We design functional Items",
+        "text": "Class integer tellus praesent at torquent cras, potenti erat fames volutpat etiam."
+    },
+    {
+        "id":6,
+        "img": "http://ledthanhdat.vn/html/cleric/assets/images/slider-blog-thumb-2.jpg",
+        "date": "Agust 17, 09:14 am",
+        "title": "We know that buying Items",
+        "text": "Using Lorem Ipsum allows designers to put together layouts and the form content"
+    }
+]
