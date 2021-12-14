@@ -1007,6 +1007,44 @@ button {
   margin-top: 60px;
 }
 
+.news-form {
+  margin-top: 50px;
+  background-color: #7F87AB;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.news-form h1 {
+  text-align: center;
+}
+
+.form-btn {
+  margin-top: 19px;
+}
+
+.news-text {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.form-header .header__top {
+  padding: 20px;
+}
+
+.form-header .header__top p {
+  margin-bottom: 0;
+}
+
+.form-logo {
+  background-color: #afafb1;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.form-control {
+  height: auto;
+}
+
 .tablet-bar {
   font-size: 19px;
   border: 2px solid #DEDEDE;
