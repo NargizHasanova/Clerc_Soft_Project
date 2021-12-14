@@ -1045,6 +1045,25 @@ button {
   height: auto;
 }
 
+.news .news-item img {
+  height: 280px;
+}
+
+.news-desc {
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
 .tablet-bar {
   font-size: 19px;
   border: 2px solid #DEDEDE;

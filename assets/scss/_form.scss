@@ -32,3 +32,13 @@
     height: auto;
     
 }
+.news .news-item img{
+    height: 280px;
+}
+.news-desc{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
