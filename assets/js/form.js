@@ -2,7 +2,6 @@ const submitBtn = document.querySelector(".submit-form-btn")
 const title = document.querySelector("#validationDefault01")
 const text = document.querySelector("#form-textarea")
 const img = document.querySelector("#validationDefault03")
-const clear = document.querySelector(".clearAPI")
 const id = Date.now()
 const date = new Date()
 
@@ -10,21 +9,23 @@ let newImgResult = null
 img.addEventListener("change", (e) => {
     const file = e.target.files[0]
     const reader = new FileReader()
-    reader.onloadend = () => {
+    reader.onloadend = function () {
         newImgResult = reader.result
     }
     reader.readAsDataURL(file)
 })
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault()
     axios.post("https://test-003-69327-default-rtdb.firebaseio.com/news.json",
         {
-            id: id, title: title.value, text: text.value, img: newImgResult, date: date
+            id, title: title.value, text: text.value, img: newImgResult, date
         })
         .then(res => console.log(res))
         .catch(error => console.log(error))
     //location.reload()
 })
+
 
 
 
