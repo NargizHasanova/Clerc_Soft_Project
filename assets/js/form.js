@@ -9,7 +9,7 @@ let newImgResult = null
 img.addEventListener("change", (e) => {
     const file = e.target.files[0]
     const reader = new FileReader()
-    reader.onloadend = function () {
+    reader.onloadend = function() {
         newImgResult = reader.result
     }
     reader.readAsDataURL(file)
@@ -17,13 +17,24 @@ img.addEventListener("change", (e) => {
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault()
-    axios.post("https://test-003-69327-default-rtdb.firebaseio.com/news.json",
-        {
-            id, title: title.value, text: text.value, img: newImgResult, date
-        })
-        .then(res => console.log(res))
-        .catch(error => console.log(error))
-    //location.reload()
+    try {
+        if (title.value !== "" && text.value !== "" && newImgResult !== null) {
+            axios.post("https://test-003-69327-default-rtdb.firebaseio.com/news.json", {
+                    id,
+                    title: title.value,
+                    text: text.value,
+                    img: newImgResult,
+                    date
+                })
+                .then(res => console.log(res))
+        }
+    } catch (error) {
+        console.log(error)
+    } finally {
+        title.value = ""
+        text.value = ""
+    }
+
 })
 
 
@@ -47,6 +58,3 @@ submitBtn.addEventListener("click", (e) => {
 //         .then(res => res.json())
 //         .then(res => console.log(res));
 // })
-
-
-

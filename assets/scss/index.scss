@@ -3,7 +3,6 @@
     @import './_mixins.scss';
     @import './_products.scss';
     @import './_form.scss';
-    
     //mobile styles start ========================================
     .tablet-bar {
         font-size: 19px;
@@ -14,6 +13,7 @@
     }
     
     .mobile-navbar {
+        display: none;
         >i {
             font-size: 16px;
             border: 1px solid #DEDEDE;
@@ -1263,8 +1263,8 @@
             position: static;
             display: flex !important;
             align-items: center;
-            margin-top: 50px;
-            margin-bottom: 70px;
+            margin-top: 80px;
+            margin-bottom: 40px;
         }
         border-bottom: 2px solid #eee;
     }
@@ -1318,7 +1318,6 @@
                     height: 0;
                     transition: 0.5s;
                     background-color: rgba(0, 0, 0, 0.5);
-                    color: red;
                 }
                 .layer-center {
                     position: absolute;
@@ -1647,6 +1646,9 @@
         }
         .mobile-navbar i {
             display: inline-block;
+        }
+        .mobile-navbar{
+            display: block;
         }
         .shop-btn button {
             font-size: 16px;

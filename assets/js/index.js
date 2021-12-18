@@ -6,10 +6,8 @@ var swiper = new Swiper(".mySwiper", {
     },
     autoplay: {
         delay: 4000,
-
     },
 });
-
 
 //======================= swiper2 
 
@@ -233,7 +231,6 @@ let topRated = collection.filter(item => item.topRated === true)
 
 showCollection(bestseller)
 
-
 function showCollection(data) {
     let res = data.map(item => {
         return (
@@ -308,7 +305,6 @@ categoriesContainer.addEventListener("click", e => {
 
 //======================== btmToTop js ==================
 let toTop = document.querySelector(".btmToTop")
-var rootElement = document.documentElement
 
 window.onscroll = function () {
     scrollFunction()
@@ -453,7 +449,7 @@ function foo() {
 
     });
 }
-pagin.addEventListener("click", e => {
+pagin.addEventListener("click", () => {
     upEl.forEach(element => {
         element.classList.add("up-anim")
     });
@@ -468,7 +464,7 @@ pagin.addEventListener("click", e => {
     });
     window.setTimeout(foo, 2000);
 })
-//===================================================
+//=================================================== search box mobile
 let searchBox = document.querySelector(".search-box")
 let searchBtn425 = document.querySelector(".search425")
 let searchCloseBtn = document.querySelector(".search-close-btn")
